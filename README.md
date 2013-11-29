@@ -37,6 +37,8 @@ On the web.xml file you usually define the url-pattern where your WebSocket serv
 </web-app>
 ```
 
+You will need also to enable http 1.1. Go to the "Configure your application to use WebSocket" section to know how to enable it through the CloudBees SDK.
+
 ## Client side
 
 You will need to create a WebSocket connection specifying:
@@ -70,3 +72,9 @@ bees app:proxy:update -a websocket-app http_version=1.1
 ```sh
 bees app:deploy -a  websocket-app -t tomcat7 app.war
 ```
+
+# CloudBees WebSocket documentation
+
+You should also take a look at our current Websockets documentation on our Wiki for Developers.
+
+https://developer.cloudbees.com/bin/view/RUN/WebSockets
